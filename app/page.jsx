@@ -44,7 +44,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }} />
 
       {/* ---------- HERO ---------- */}
-      <section className="relative overflow-hidden bg-trail text-ink">
+      <section className="relative overflow-hidden bg-trail on-gradient">
         <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_80%_110%,rgba(20,18,48,.28),transparent_70%)]" aria-hidden="true" />
         <div className="container-site relative flex flex-col gap-8 py-20 sm:py-28">
           <p className="animate-fade-up font-mono text-sm font-bold uppercase tracking-[0.25em]">
@@ -63,7 +63,7 @@ export default function Home() {
               className="btn bg-white/90 text-lg font-extrabold text-ink shadow-lg hover:-translate-y-0.5">
               <Icon name="flag" /> Play the CTF
             </a>
-            <Link href="/#schedule" className="btn border-2 border-ink/50 text-lg font-bold hover:bg-ink/10">
+            <Link href="/#schedule" className="btn border-2 border-white/60 text-lg font-bold hover:bg-white/10 dark:border-ink/50 dark:hover:bg-ink/10">
               View schedule
             </Link>
           </div>
