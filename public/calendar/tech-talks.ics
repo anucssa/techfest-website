@@ -7,8 +7,8 @@ DTSTAMP:20260731T100000Z
 DTSTART;TZID=Australia/Canberra:20260731T100000
 DTEND;TZID=Australia/Canberra:20260731T160000
 SUMMARY:Tech Talks Conference — Bush Week Tech Fest
-DESCRIPTION:A day of computing and cybersecurity talks from industry and academic speakers — ideas talks\, deep technical sessions\, and true-crime incident stories\, in 25 and 50 minute slots. https://techfest.cssa.club/events/tech-talks/
+DESCRIPTION:A day of computing and cybersecurity talks from industry and academic speakers — ideas talks\, deep technical sessions\, and true-crime incident stories\, in 25 and 50 minute slots. https://anucssa.github.io/techfest-website/events/tech-talks/
 LOCATION:Birch Building (#35)\, Science Road\, ANU\, Acton ACT 2601
-URL:https://techfest.cssa.club/events/tech-talks/
+URL:https://anucssa.github.io/techfest-website/events/tech-talks/
 END:VEVENT
 END:VCALENDAR

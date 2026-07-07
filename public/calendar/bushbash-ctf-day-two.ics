@@ -7,8 +7,8 @@ DTSTAMP:20260801T100000Z
 DTSTART;TZID=Australia/Canberra:20260801T100000
 DTEND;TZID=Australia/Canberra:20260801T200000
 SUMMARY:BushBash CTF — Day Two — Bush Week Tech Fest
-DESCRIPTION:The competition continues all day in Melville Hall\, with non-technical brain-break activities like GeoGuessr and Wikipedia racing alongside the main board. https://techfest.cssa.club/events/bushbash-ctf-day-two/
+DESCRIPTION:The competition continues all day in Melville Hall\, with non-technical brain-break activities like GeoGuessr and Wikipedia racing alongside the main board. https://anucssa.github.io/techfest-website/events/bushbash-ctf-day-two/
 LOCATION:Melville Hall (#12)\, University Avenue\, ANU\, Acton ACT 2601
-URL:https://techfest.cssa.club/events/bushbash-ctf-day-two/
+URL:https://anucssa.github.io/techfest-website/events/bushbash-ctf-day-two/
 END:VEVENT
 END:VCALENDAR

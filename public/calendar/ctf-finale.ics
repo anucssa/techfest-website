@@ -7,8 +7,8 @@ DTSTAMP:20260802T100000Z
 DTSTART;TZID=Australia/Canberra:20260802T100000
 DTEND;TZID=Australia/Canberra:20260802T173000
 SUMMARY:BushBash CTF Finale & Prizes — Bush Week Tech Fest
-DESCRIPTION:The final hours of the CTF\, the closing ceremony\, winner announcements and prizes — followed by pizza. https://techfest.cssa.club/events/ctf-finale/
+DESCRIPTION:The final hours of the CTF\, the closing ceremony\, winner announcements and prizes — followed by pizza. https://anucssa.github.io/techfest-website/events/ctf-finale/
 LOCATION:Melville Hall (#12)\, University Avenue\, ANU\, Acton ACT 2601
-URL:https://techfest.cssa.club/events/ctf-finale/
+URL:https://anucssa.github.io/techfest-website/events/ctf-finale/
 END:VEVENT
 END:VCALENDAR

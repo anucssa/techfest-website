@@ -29,7 +29,7 @@ export default function TechTalks() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="bg-trail text-ink">
+      <section className="bg-trail on-gradient">
         <div className="container-site py-16 sm:py-20">
           <p className="font-mono text-sm font-bold uppercase tracking-[0.25em]">Friday 31 July · 10am–4pm · {venue.shortName}</p>
           <h1 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">Tech Talks Conference</h1>

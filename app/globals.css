@@ -21,11 +21,22 @@
   .btn-trail { @apply btn bg-trail text-white shadow-lg hover:-translate-y-0.5 dark:text-ink; text-shadow: 0 1px 6px rgba(20,18,48,.4); }
   .dark .btn-trail { text-shadow: none; }
   .btn-ghost { @apply btn border-2 border-ink/20 text-inherit hover:border-ink/50 dark:border-white/25 dark:hover:border-white/60; }
+  /* Theme-matching surface button: light button in light mode, dark in dark mode
+     (the inverse of .btn-primary). Reads as "part of the current theme". */
+  .btn-surface { @apply btn bg-white text-ink shadow-lg hover:-translate-y-0.5 dark:bg-ink dark:text-white; }
+  /* The hero "Play the CTF" button: follows the theme like .btn-surface but is
+     deliberately the loudest element on screen — brand-yellow ring + glow. */
+  .btn-ctf { @apply btn-surface font-extrabold ring-4 ring-brand-yellow; }
+  .btn-ctf { box-shadow: 0 0 0 2px rgba(20,18,48,.15), 0 0 26px rgba(255,187,52,.65), 0 10px 20px -8px rgba(20,18,48,.45); }
+  .btn-ctf:hover { box-shadow: 0 0 0 2px rgba(20,18,48,.15), 0 0 34px rgba(255,187,52,.85), 0 14px 24px -8px rgba(20,18,48,.45); }
   .card { @apply rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/10 dark:bg-ink-soft; }
   .eyebrow { @apply font-mono text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400; }
   .h-section { @apply text-3xl font-extrabold tracking-tight text-ink sm:text-4xl dark:text-white; }
   .trail-text { background: linear-gradient(90deg,#c47f00,#2f6fbe,#1d9a35); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .dark .trail-text { background: linear-gradient(90deg,#ffbb34,#67acf1,#3add41); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  /* For headings sitting on an always-dark (bg-ink) surface: the bright gradient
+     in BOTH themes. Plain .trail-text goes dark-on-dark in light mode there. */
+  .trail-text-bright, .dark .trail-text-bright { background: linear-gradient(90deg,#ffbb34,#67acf1,#3add41); -webkit-background-clip: text; background-clip: text; color: transparent; }
   /* Text sitting directly on the bright brand gradient (hero): white in light mode
      with a soft shadow for legibility over the lighter corner, ink in dark mode.
      color + text-shadow inherit, so all child text picks this up automatically. */

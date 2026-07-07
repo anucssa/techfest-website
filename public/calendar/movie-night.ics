@@ -7,8 +7,8 @@ DTSTAMP:20260801T180000Z
 DTSTART;TZID=Australia/Canberra:20260801T180000
 DTEND;TZID=Australia/Canberra:20260801T220000
 SUMMARY:Movie Night — Bush Week Tech Fest
-DESCRIPTION:Wind down day two with a movie night in the city. Venue details announced here closer to the date. https://techfest.cssa.club/events/movie-night/
-LOCATION:Canberra City Centre\, ACT 2601 — exact venues announced on each event page
-URL:https://techfest.cssa.club/events/movie-night/
+DESCRIPTION:Wind down day two with a movie night at Dendy Cinemas in Civic — inside the Canberra Centre\, a short walk or bus ride from campus. Film announced closer to the date. https://anucssa.github.io/techfest-website/events/movie-night/
+LOCATION:Level 2\, North Quarter\, Canberra Centre\, 148 Bunda Street\, Canberra ACT 2601
+URL:https://anucssa.github.io/techfest-website/events/movie-night/
 END:VEVENT
 END:VCALENDAR

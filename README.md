@@ -7,6 +7,10 @@ Built with **Next.js + React + Tailwind CSS**, exported as a fully **static site
 no server required). Aileron, the official brand typeface, is self-hosted via Fontsource. The colour
 system is derived from the Canva brand gradient: `#ffbb34` → `#67acf1` → `#3add41`.
 
+> 📘 **Extending or restyling the site?** Read **[GUIDE.md](GUIDE.md)** — the maintainer's guide to
+> the architecture, the design system (buttons, gradient text, dark-mode rules), and step-by-step
+> recipes for new pages, pins, and content collections.
+
 ---
 
 ## Quick start
@@ -86,8 +90,9 @@ approved files from your ANU contact). Drop them at `public/images/anu-logo.png`
 ## ⚠️ Before launch — verify these
 
 1. **Map coordinates** in `data/venues.json` are close approximations. Open each venue in Google
-   Maps, right-click the exact spot → copy lat/lng → paste into the JSON. The two **parking**
-   entries (Baldessin, Willows) especially need confirming against current ANU parking rules.
+   Maps, right-click the exact spot → copy lat/lng → paste into the JSON. The three **parking**
+   entries (Baldessin, Kingsley St, Willows) especially need confirming against current ANU
+   parking rules, and the **Dendy Cinemas** pin against the Canberra Centre entrance.
 2. **Social links** — Discord, Instagram and Facebook currently point at the Linktree; replace with
    direct URLs in `data/site.json`.
 3. **OG preview** — after deploying, paste the URL into a Discord/Slack message or

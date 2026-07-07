@@ -58,9 +58,8 @@ export default function Home() {
             <strong>{site.dateDisplay}</strong>. {site.tagline}
           </p>
           <div className="flex animate-fade-up flex-wrap gap-3" style={{ animationDelay: '.24s' }}>
-            <Link href="/#register" className="btn-primary text-lg">Register now</Link>
-            <a href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer"
-              className="btn bg-white/90 text-lg font-extrabold text-ink shadow-lg hover:-translate-y-0.5">
+            <Link href="/#register" className="btn-surface text-lg">Register now</Link>
+            <a href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer" className="btn-ctf text-lg">
               <Icon name="flag" /> Play the CTF
             </a>
             <Link href="/#schedule" className="btn border-2 border-white/60 text-lg font-bold hover:bg-white/10 dark:border-ink/50 dark:hover:bg-ink/10">
@@ -127,7 +126,7 @@ export default function Home() {
             <div>
               <p className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-brand-yellow">48 hours · live scoreboard · prizes</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
-                BushBash <span className="trail-text">CTF</span>
+                BushBash <span className="trail-text-bright">CTF</span>
               </h2>
               <p className="mt-4 max-w-xl text-lg text-slate-300">
                 A beginner-friendly, team-based capture-the-flag running from the Friday-night launch to the Sunday
@@ -162,7 +161,7 @@ export default function Home() {
         id="map"
         eyebrow="Getting there"
         title="Campus map & parking"
-        lead="Tech Talks run in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are on Fellows Oval. Evening events are a short trip into the Canberra city centre — follow the green dashed line."
+        lead="Tech Talks run in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are on Fellows Oval. Movie night is at Dendy Cinemas in Civic, and the networking night is nearby in the city centre — follow the green dashed line. Public ticketed car parks are marked with a yellow P."
       >
         <CampusMap />
       </Section>

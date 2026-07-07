@@ -40,7 +40,7 @@ export default function CtfPage() {
             48-hour capture the flag · launches 5pm Friday 31 July
           </p>
           <h1 className="text-5xl font-black tracking-tight sm:text-7xl">
-            BushBash <span className="trail-text">CTF</span>
+            BushBash <span className="trail-text-bright">CTF</span>
           </h1>
           <p className="max-w-2xl text-xl text-slate-300">
             Team-based competitive puzzle solving, vulnerability analysis and software exploitation. Find the flag,

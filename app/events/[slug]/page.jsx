@@ -42,7 +42,7 @@ export default function EventPage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="bg-trail text-ink">
+      <section className="bg-trail on-gradient">
         <div className="container-site py-14 sm:py-20">
           <nav aria-label="Breadcrumb" className="font-mono text-sm font-bold">
             <Link href="/#schedule" className="underline-offset-4 hover:underline">← Full schedule</Link>
