@@ -4,7 +4,7 @@ import Countdown from '@/components/Countdown';
 import Schedule from '@/components/Schedule';
 import SponsorWall from '@/components/SponsorWall';
 import CampusMap from '@/components/CampusMap';
-import { site, asset } from '@/lib/data';
+import { site, asset, absUrl } from '@/lib/data';
 
 // schema.org structured data → rich results & link previews for the festival.
 const eventJsonLd = {
@@ -22,7 +22,7 @@ const eventJsonLd = {
     address: { '@type': 'PostalAddress', addressLocality: 'Acton', addressRegion: 'ACT', postalCode: '2601', addressCountry: 'AU' },
   },
   organizer: { '@type': 'Organization', name: site.organiser, url: 'https://cssa.club' },
-  image: [`${site.url}/images/og.png`],
+  image: [absUrl("/images/og.png")],
   url: site.url,
   isAccessibleForFree: true,
 };

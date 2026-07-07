@@ -6,32 +6,32 @@ import '@fontsource/aileron/700.css';
 import '@fontsource/aileron/800.css'; // heaviest weight — 'black' (900) falls back to this
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { site } from '@/lib/data';
+import { site, asset, SITE_URL, absUrl } from '@/lib/data';
 
 export const metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(SITE_URL),
   title: { default: `${site.name} 2026 · ANU CSSA`, template: `%s · ${site.name} 2026` },
   description: site.description,
   applicationName: site.name,
   keywords: ['ANU', 'CSSA', 'Bush Week', 'Tech Fest', 'CTF', 'BushBash', 'cybersecurity', 'computer science', 'Canberra'],
   icons: {
-    icon: '/images/favicon.png',
-    apple: '/images/apple-touch-icon.png',
+    icon: asset('/images/favicon.png'),
+    apple: asset('/images/apple-touch-icon.png'),
   },
   openGraph: {
     type: 'website',
-    url: site.url,
+    url: absUrl('/'),
     siteName: site.name,
     title: `${site.name} 2026`,
     description: site.description,
-    images: [{ url: '/images/og.png', width: 1200, height: 630, alt: 'Bush Week Tech Fest 2026 — 31 July to 2 August, ANU' }],
+    images: [{ url: absUrl('/images/og.png'), width: 1200, height: 630, alt: 'Bush Week Tech Fest 2026 — 31 July to 2 August, ANU' }],
     locale: 'en_AU',
   },
   twitter: {
     card: 'summary_large_image',
     title: `${site.name} 2026`,
     description: site.description,
-    images: ['/images/og.png'],
+    images: [absUrl('/images/og.png')],
   },
 };
 
