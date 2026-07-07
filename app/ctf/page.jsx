@@ -1,6 +1,6 @@
 import Icon from '@/components/Icon';
 import Countdown from '@/components/Countdown';
-import { site, venues } from '@/lib/data';
+import { site, venues, asset } from '@/lib/data';
 
 export const metadata = {
   title: 'BushBash CTF',
@@ -118,7 +118,7 @@ export default function CtfPage() {
               <a className="btn-ghost text-sm" href={site.ctf.ctftimeUrl} target="_blank" rel="noopener noreferrer">
                 ctftime.org/ctf/1639 <Icon name="external" className="h-4 w-4" />
               </a>
-              <a className="btn-ghost text-sm" href="/calendar/ctf-launch.ics" download>
+              <a className="btn-ghost text-sm" href={asset("/calendar/ctf-launch.ics")} download>
                 <Icon name="calendar" className="h-4 w-4" /> Add launch to calendar
               </a>
             </div>

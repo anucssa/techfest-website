@@ -1,4 +1,4 @@
-import { sponsors } from '@/lib/data';
+import { sponsors, asset } from '@/lib/data';
 
 // Responsive sponsor grid. Each tile links out to the sponsor's website.
 // Tiles use a white surface in both themes so every logo variant stays legible.
@@ -18,7 +18,7 @@ export default function SponsorWall() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={s.logo}
+              src={asset(s.logo)}
               alt={s.name}
               loading="lazy"
               className="max-h-14 w-auto max-w-full object-contain"

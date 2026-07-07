@@ -4,7 +4,7 @@ import Countdown from '@/components/Countdown';
 import Schedule from '@/components/Schedule';
 import SponsorWall from '@/components/SponsorWall';
 import CampusMap from '@/components/CampusMap';
-import { site } from '@/lib/data';
+import { site, asset } from '@/lib/data';
 
 // schema.org structured data → rich results & link previews for the festival.
 const eventJsonLd = {
@@ -113,7 +113,7 @@ export default function Home() {
         >
           <Schedule />
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="/calendar/bush-week-tech-fest.ics" download className="btn-primary text-sm">
+            <a href={asset("/calendar/bush-week-tech-fest.ics")} download className="btn-primary text-sm">
               <Icon name="calendar" className="h-4 w-4" /> Add the whole festival to your calendar
             </a>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
       >
         <div className="flex flex-wrap gap-3">
           {site.downloads.map((d) => (
-            <a key={d.file} href={d.file} download className="btn-primary">
+            <a key={d.file} href={asset(d.file)} download className="btn-primary">
               <Icon name="download" className="h-5 w-5" /> {d.label}
             </a>
           ))}

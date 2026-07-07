@@ -1,5 +1,5 @@
 import Icon from './Icon';
-import { site } from '@/lib/data';
+import { site, asset } from '@/lib/data';
 
 export default function Footer() {
   return (
@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
           <div className="mt-4 inline-block rounded-xl bg-white p-2 shadow-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/linktree-qr.svg" alt="QR code linking to the CSSA Linktree" className="h-28 w-28" />
+            <img src={asset('/images/linktree-qr.svg')} alt="QR code linking to the CSSA Linktree" className="h-28 w-28" />
           </div>
         </div>
         <div>
@@ -51,7 +51,7 @@ export default function Footer() {
                   className="inline-flex items-center gap-2 font-bold text-ink hover:underline dark:text-white">
                   {l.image?.includes('cssa-banner') ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img src={l.image} alt={`${l.name} logo`} className="h-9 w-auto rounded bg-white p-1" />
+                    <img src={asset(l.image)} alt={`${l.name} logo`} className="h-9 w-auto rounded bg-white p-1" />
                   ) : (
                     <span className="rounded-lg border-2 border-current px-3 py-1 text-sm">{l.name}</span>
                   )}

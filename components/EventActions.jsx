@@ -1,5 +1,6 @@
 import Icon from './Icon';
 import ShareButton from './ShareButton';
+import { asset } from '@/lib/data';
 
 // The action row on every event page: registration (when live), Google Maps,
 // add-to-calendar (.ics generated at build time), and share.
@@ -22,7 +23,7 @@ export default function EventActions({ event, venue }) {
       <a className="btn-ghost text-sm" href={venue.gmaps} target="_blank" rel="noopener noreferrer">
         <Icon name="pin" className="h-4 w-4" /> Google Maps
       </a>
-      <a className="btn-ghost text-sm" href={`/calendar/${event.slug}.ics`} download>
+      <a className="btn-ghost text-sm" href={asset(`/calendar/${event.slug}.ics`)} download>
         <Icon name="calendar" className="h-4 w-4" /> Add to calendar
       </a>
       <ShareButton title={event.title} path={`/events/${event.slug}/`} />

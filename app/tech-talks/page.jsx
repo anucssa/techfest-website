@@ -1,6 +1,6 @@
 import Icon from '@/components/Icon';
 import EventActions from '@/components/EventActions';
-import { site, speakers, eventBySlug, venues, formatTime } from '@/lib/data';
+import { site, speakers, eventBySlug, venues, formatTime, asset } from '@/lib/data';
 
 export const metadata = {
   title: 'Tech Talks Conference',
@@ -52,7 +52,7 @@ export default function TechTalks() {
                 <p className="mt-4 text-lg font-bold text-ink dark:text-white">Speakers announced soon</p>
                 <p className="mx-auto mt-2 max-w-md text-slate-600 dark:text-slate-300">
                   The speaker line-up is being finalised. Want to give a talk? Read the{' '}
-                  <a href="/downloads/BWTF-Speaker-Brief.pdf" className="font-semibold text-sign-blue underline dark:text-brand-blue">
+                  <a href={asset("/downloads/BWTF-Speaker-Brief.pdf")} className="font-semibold text-sign-blue underline dark:text-brand-blue">
                     Speaker Brief
                   </a>{' '}
                   and get in touch at{' '}
@@ -67,7 +67,7 @@ export default function TechTalks() {
                   <li key={s.name} className="card flex flex-col gap-4 p-6 sm:flex-row">
                     {s.photo ? (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      <img src={s.photo} alt={`Portrait of ${s.name}`} className="h-24 w-24 shrink-0 rounded-2xl object-cover" />
+                      <img src={asset(s.photo)} alt={`Portrait of ${s.name}`} className="h-24 w-24 shrink-0 rounded-2xl object-cover" />
                     ) : null}
                     <div className="min-w-0">
                       <p className="font-mono text-sm font-semibold text-slate-500 dark:text-slate-400">
@@ -89,8 +89,8 @@ export default function TechTalks() {
                       <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
                         {s.linkedin ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={s.linkedin} target="_blank" rel="noopener noreferrer"><Icon name="linkedin" className="h-4 w-4" />LinkedIn</a> : null}
                         {s.website ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={s.website} target="_blank" rel="noopener noreferrer"><Icon name="globe" className="h-4 w-4" />Website</a> : null}
-                        {s.slides ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={s.slides}><Icon name="download" className="h-4 w-4" />Slides</a> : null}
-                        {s.recording ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={s.recording}><Icon name="film" className="h-4 w-4" />Recording</a> : null}
+                        {s.slides ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={asset(s.slides)}><Icon name="download" className="h-4 w-4" />Slides</a> : null}
+                        {s.recording ? <a className="inline-flex items-center gap-1 text-sign-blue hover:underline dark:text-brand-blue" href={asset(s.recording)}><Icon name="film" className="h-4 w-4" />Recording</a> : null}
                       </p>
                     </div>
                   </li>
@@ -116,7 +116,7 @@ export default function TechTalks() {
                 <li>Technical talks — emerging skills in computing, pen-testing and zero-day research; secure coding in the age of vibe coding</li>
                 <li>Story talks — cyberattack true crime, incident response, and post-incident review</li>
               </ul>
-              <a href="/downloads/BWTF-Speaker-Brief.pdf" download className="btn-primary mt-5 w-full text-sm">
+              <a href={asset("/downloads/BWTF-Speaker-Brief.pdf")} download className="btn-primary mt-5 w-full text-sm">
                 <Icon name="download" className="h-4 w-4" /> Speaker Brief (PDF)
               </a>
             </div>

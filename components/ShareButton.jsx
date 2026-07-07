@@ -1,11 +1,12 @@
 'use client';
 import { useState } from 'react';
 import Icon from './Icon';
+import { BASE_PATH } from '@/lib/data';
 
 export default function ShareButton({ title, path }) {
   const [copied, setCopied] = useState(false);
   const share = async () => {
-    const url = `${window.location.origin}${path}`;
+    const url = `${window.location.origin}${BASE_PATH}${path}`;
     if (navigator.share) {
       try { await navigator.share({ title, url }); return; } catch {}
     }
