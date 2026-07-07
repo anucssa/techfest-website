@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ANU CSSA//BushWeekTechFest//EN
+BEGIN:VEVENT
+UID:bbq-sunday@techfest.cssa.club
+DTSTAMP:20260802T120000Z
+DTSTART;TZID=Australia/Canberra:20260802T120000
+DTEND;TZID=Australia/Canberra:20260802T130000
+SUMMARY:Free BBQ Lunch — Bush Week Tech Fest
+DESCRIPTION:Free BBQ lunch on Fellows Oval — day two. https://techfest.cssa.club/events/bbq-sunday/
+LOCATION:Fellows Oval\, Fellows Road\, ANU\, Acton ACT 2601
+URL:https://techfest.cssa.club/events/bbq-sunday/
+END:VEVENT
+END:VCALENDAR

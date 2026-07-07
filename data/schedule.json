@@ -1,0 +1,122 @@
+{
+  "_readme": "The single source of truth for the programme. Every entry becomes: a row in the home-page schedule, its own page at /events/<slug>/, and a .ics calendar file. To add an event, copy an object and fill it in — nothing else to touch. Times are 24h local (Canberra). Set links.humanitix / links.rubric when listings go live and buttons appear automatically.",
+  "days": [
+    {
+      "id": "fri",
+      "label": "Friday 31 July",
+      "date": "2026-07-31",
+      "events": [
+        {
+          "slug": "tech-talks",
+          "title": "Tech Talks Conference",
+          "icon": "mic",
+          "start": "10:00",
+          "end": "16:00",
+          "venue": "birch",
+          "includes": "Includes refreshments",
+          "blurb": "A day of computing and cybersecurity talks from industry and academic speakers — ideas talks, deep technical sessions, and true-crime incident stories, in 25 and 50 minute slots.",
+          "page": "/tech-talks",
+          "links": { "humanitix": "", "rubric": "" }
+        },
+        {
+          "slug": "ctf-launch",
+          "title": "BushBash CTF Launch",
+          "icon": "flag",
+          "start": "17:00",
+          "end": "22:00",
+          "venue": "melville",
+          "includes": "Includes refreshments",
+          "blurb": "The 48-hour BushBash CTF goes live at 5pm. Form a team, meet other players, and start capturing flags across OSINT, Rev, Pwn, Web, Crypto and Misc.",
+          "page": "/ctf",
+          "links": { "humanitix": "", "rubric": "" }
+        }
+      ]
+    },
+    {
+      "id": "sat",
+      "label": "Saturday 1 August",
+      "date": "2026-08-01",
+      "events": [
+        {
+          "slug": "bushbash-ctf-day-two",
+          "title": "BushBash CTF — Day Two",
+          "icon": "flag",
+          "start": "10:00",
+          "end": "20:00",
+          "venue": "melville",
+          "includes": "Includes refreshments",
+          "blurb": "The competition continues all day in Melville Hall, with non-technical brain-break activities like GeoGuessr and Wikipedia racing alongside the main board.",
+          "page": "/ctf",
+          "links": { "humanitix": "", "rubric": "" }
+        },
+        {
+          "slug": "bbq-saturday",
+          "title": "Free BBQ Lunch",
+          "icon": "bbq",
+          "start": "12:00",
+          "end": "13:00",
+          "venue": "fellows",
+          "includes": "Free food",
+          "blurb": "Free BBQ lunch on Fellows Oval for everyone at the festival.",
+          "page": "",
+          "links": { "humanitix": "", "rubric": "" }
+        },
+        {
+          "slug": "movie-night",
+          "title": "Movie Night",
+          "icon": "film",
+          "start": "18:00",
+          "end": "22:00",
+          "venue": "cbd",
+          "includes": "",
+          "blurb": "Wind down day two with a movie night in the city. Venue details announced here closer to the date.",
+          "page": "",
+          "links": { "humanitix": "", "rubric": "" }
+        }
+      ]
+    },
+    {
+      "id": "sun",
+      "label": "Sunday 2 August",
+      "date": "2026-08-02",
+      "events": [
+        {
+          "slug": "ctf-finale",
+          "title": "BushBash CTF Finale & Prizes",
+          "icon": "trophy",
+          "start": "10:00",
+          "end": "17:30",
+          "venue": "melville",
+          "includes": "Includes pizza dinner",
+          "blurb": "The final hours of the CTF, the closing ceremony, winner announcements and prizes — followed by pizza.",
+          "page": "/ctf",
+          "links": { "humanitix": "", "rubric": "" }
+        },
+        {
+          "slug": "bbq-sunday",
+          "title": "Free BBQ Lunch",
+          "icon": "bbq",
+          "start": "12:00",
+          "end": "13:00",
+          "venue": "fellows",
+          "includes": "Free food",
+          "blurb": "Free BBQ lunch on Fellows Oval — day two.",
+          "page": "",
+          "links": { "humanitix": "", "rubric": "" }
+        },
+        {
+          "slug": "networking-drinks",
+          "title": "Networking & Drinks Night",
+          "icon": "drinks",
+          "start": "18:00",
+          "end": "22:00",
+          "venue": "cbd",
+          "includes": "",
+          "blurb": "Cap off the festival with an evening of networking and drinks in the city with speakers, sponsors and fellow students.",
+          "page": "",
+          "links": { "humanitix": "", "rubric": "" }
+        }
+      ]
+    }
+  ]
+}

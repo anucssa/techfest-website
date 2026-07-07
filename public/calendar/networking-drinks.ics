@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ANU CSSA//BushWeekTechFest//EN
+BEGIN:VEVENT
+UID:networking-drinks@techfest.cssa.club
+DTSTAMP:20260802T180000Z
+DTSTART;TZID=Australia/Canberra:20260802T180000
+DTEND;TZID=Australia/Canberra:20260802T220000
+SUMMARY:Networking & Drinks Night — Bush Week Tech Fest
+DESCRIPTION:Cap off the festival with an evening of networking and drinks in the city with speakers\, sponsors and fellow students. https://techfest.cssa.club/events/networking-drinks/
+LOCATION:Canberra City Centre\, ACT 2601 — exact venues announced on each event page
+URL:https://techfest.cssa.club/events/networking-drinks/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,14 @@
+{
+  "_readme": "Sponsor wall. Adding a sponsor = add one object here + drop their PNG into public/sponsors/. If the logo file is missing the wall gracefully shows the sponsor's name as text. 'invert' lifts dark logos on dark mode.",
+  "sponsors": [
+    { "name": "Jane Street", "url": "https://www.janestreet.com", "logo": "/sponsors/jane-street.png" },
+    { "name": "IMC Trading", "url": "https://www.imc.com", "logo": "/sponsors/imc.png" },
+    { "name": "Citadel Securities", "url": "https://www.citadelsecurities.com", "logo": "/sponsors/citadel-securities.png" },
+    { "name": "Atlassian", "url": "https://www.atlassian.com", "logo": "/sponsors/atlassian.png" },
+    { "name": "Optiver", "url": "https://optiver.com", "logo": "/sponsors/optiver.png" },
+    { "name": "InfoSect", "url": "https://www.infosectcbr.com.au", "logo": "/sponsors/infosect.png" },
+    { "name": "BSides Canberra", "url": "https://www.bsidesau.com.au", "logo": "/sponsors/bsides-canberra.png" },
+    { "name": "Tanto Security", "url": "https://tantosec.com", "logo": "/sponsors/tanto.png" },
+    { "name": "NTT DATA", "url": "https://www.nttdata.com", "logo": "/sponsors/ntt-data.png" }
+  ]
+}

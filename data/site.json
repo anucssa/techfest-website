@@ -1,0 +1,59 @@
+{
+  "_readme": "Site-wide settings. Edit this file to change names, links, contacts and the registration embed. No code changes needed.",
+  "name": "Bush Week Tech Fest",
+  "shortName": "BWTF '26",
+  "organiser": "ANU Computer Science Students' Association (CSSA)",
+  "tagline": "...no better place to be in Bush Week!",
+  "description": "A student-led tech festival celebrating Computer Science and Cybersecurity — a 48-hour BushBash CTF, Tech Talks with industry speakers, free BBQs, a Movie Night, and a Networking & Drinks Night. 31 July – 2 August 2026 at ANU.",
+  "url": "https://techfest.cssa.club",
+  "startDate": "2026-07-31T10:00:00+10:00",
+  "endDate": "2026-08-02T22:00:00+10:00",
+  "dateDisplay": "31 July – 2 August 2026",
+  "timezone": "Australia/Canberra",
+  "location": "Australian National University, Acton ACT",
+
+  "ctf": {
+    "name": "BushBash CTF",
+    "playUrl": "https://bushbash.cssa.club/",
+    "ctftimeUrl": "https://ctftime.org/ctf/1639",
+    "hours": 48,
+    "targetParticipants": 250
+  },
+
+  "registration": {
+    "_note": "mode: 'embed' shows an iframe of embedUrl; 'link' shows a big button to linkUrl. Swap to Humanitix/Rubric later by changing these two fields.",
+    "mode": "link",
+    "embedUrl": "",
+    "linkUrl": "https://linktr.ee/anucssa",
+    "linkLabel": "Register via CSSA Linktree",
+    "note": "Individual event registrations (Humanitix / Rubric) will be linked from each event page as they go live."
+  },
+
+  "downloads": [
+    { "label": "Event Brief (PDF)", "file": "/downloads/BWTF-Event-Brief.pdf", "note": "Replace the file in public/downloads/ to update — the button never changes." },
+    { "label": "Tech Talk Speaker Brief (PDF)", "file": "/downloads/BWTF-Speaker-Brief.pdf", "note": "" }
+  ],
+
+  "socials": [
+    { "label": "Linktree", "url": "https://linktr.ee/anucssa", "icon": "link" },
+    { "label": "Discord", "url": "https://linktr.ee/anucssa", "icon": "discord", "_note": "Replace with your direct Discord invite" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/company/70999137/", "icon": "linkedin" },
+    { "label": "Instagram", "url": "https://linktr.ee/anucssa", "icon": "instagram", "_note": "Replace with direct Instagram URL" },
+    { "label": "Facebook", "url": "https://linktr.ee/anucssa", "icon": "facebook", "_note": "Replace with direct Facebook URL" },
+    { "label": "GitHub", "url": "https://github.com/anucssa", "icon": "github" },
+    { "label": "Website", "url": "https://cssa.club", "icon": "globe" }
+  ],
+
+  "contacts": [
+    { "name": "Peter Woodhead", "role": "Event Organiser · CSSA Cybersecurity Officer", "email": "peter.woodhead@protonmail.com", "linkedin": "https://www.linkedin.com/in/peterwoodhead/" },
+    { "name": "ANU CSSA", "role": "Computer Science Students' Association", "email": "anucssa@anu.edu.au", "linkedin": "https://www.linkedin.com/company/70999137/" }
+  ],
+
+  "footerLogos": [
+    { "name": "ANU", "url": "https://www.anu.edu.au", "image": "/images/anu-logo.png", "_note": "Drop the official ANU logo at public/images/anu-logo.png (renders as a text link until then)" },
+    { "name": "ANU School of Computing", "url": "https://comp.anu.edu.au", "image": "/images/soco-logo.png", "_note": "Drop the SoCo logo at public/images/soco-logo.png" },
+    { "name": "ANU CSSA", "url": "https://cssa.club", "image": "/images/cssa-banner.png" }
+  ],
+
+  "disclaimer": "ANU Bush Week Tech Fest is organised by the ANU Computer Science Students' Association (CSSA), a student-run society. The Australian National University provides venue support but this event is organised by students."
+}

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ANU CSSA//BushWeekTechFest//EN
+BEGIN:VEVENT
+UID:movie-night@techfest.cssa.club
+DTSTAMP:20260801T180000Z
+DTSTART;TZID=Australia/Canberra:20260801T180000
+DTEND;TZID=Australia/Canberra:20260801T220000
+SUMMARY:Movie Night — Bush Week Tech Fest
+DESCRIPTION:Wind down day two with a movie night in the city. Venue details announced here closer to the date. https://techfest.cssa.club/events/movie-night/
+LOCATION:Canberra City Centre\, ACT 2601 — exact venues announced on each event page
+URL:https://techfest.cssa.club/events/movie-night/
+END:VEVENT
+END:VCALENDAR

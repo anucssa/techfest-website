@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ANU CSSA//BushWeekTechFest//EN
+BEGIN:VEVENT
+UID:ctf-launch@techfest.cssa.club
+DTSTAMP:20260731T170000Z
+DTSTART;TZID=Australia/Canberra:20260731T170000
+DTEND;TZID=Australia/Canberra:20260731T220000
+SUMMARY:BushBash CTF Launch — Bush Week Tech Fest
+DESCRIPTION:The 48-hour BushBash CTF goes live at 5pm. Form a team\, meet other players\, and start capturing flags across OSINT\, Rev\, Pwn\, Web\, Crypto and Misc. https://techfest.cssa.club/events/ctf-launch/
+LOCATION:Melville Hall (#12)\, University Avenue\, ANU\, Acton ACT 2601
+URL:https://techfest.cssa.club/events/ctf-launch/
+END:VEVENT
+END:VCALENDAR

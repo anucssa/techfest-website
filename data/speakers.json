@@ -1,0 +1,20 @@
+{
+  "_readme": "Tech Talks speaker list. The page shows a 'speakers announced soon' state while this list is empty. To add a speaker: copy the template below into the speakers array, drop a square photo into public/images/speakers/, and rebuild. Slide-deck download buttons appear automatically once 'slides' is set.",
+  "announced": false,
+  "template": {
+    "name": "Speaker Name",
+    "photo": "/images/speakers/speaker-name.jpg",
+    "company": "Company",
+    "companyUrl": "https://example.com",
+    "companyLogo": "/images/speakers/company-logo.png",
+    "talkTitle": "Talk title goes here",
+    "abstract": "One-paragraph talk abstract.",
+    "slot": "25 min",
+    "time": "10:30",
+    "linkedin": "https://www.linkedin.com/in/...",
+    "website": "",
+    "slides": "",
+    "recording": ""
+  },
+  "speakers": []
+}

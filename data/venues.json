@@ -1,0 +1,57 @@
+{
+  "_readme": "Venue definitions used by the schedule, event pages and the campus map. IMPORTANT: coordinates are close approximations — please verify each pin in Google Maps before launch and paste exact lat/lng here.",
+  "birch": {
+    "name": "Birch Building — Innovation Space",
+    "shortName": "Birch Building",
+    "address": "Birch Building (#35), Science Road, ANU, Acton ACT 2601",
+    "lat": -35.27562,
+    "lng": 149.11907,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Birch+Building+ANU",
+    "kind": "venue"
+  },
+  "melville": {
+    "name": "Melville Hall",
+    "shortName": "Melville Hall",
+    "address": "Melville Hall (#12), University Avenue, ANU, Acton ACT 2601",
+    "lat": -35.28109,
+    "lng": 149.12237,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Melville+Hall+ANU",
+    "kind": "venue"
+  },
+  "fellows": {
+    "name": "Fellows Oval",
+    "shortName": "Fellows Oval",
+    "address": "Fellows Oval, Fellows Road, ANU, Acton ACT 2601",
+    "lat": -35.28370,
+    "lng": 149.11910,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Fellows+Oval+ANU",
+    "kind": "venue"
+  },
+  "cbd": {
+    "name": "Canberra City Centre",
+    "shortName": "Canberra CBD",
+    "address": "Canberra City Centre, ACT 2601 — exact venues announced on each event page",
+    "lat": -35.27780,
+    "lng": 149.13040,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Canberra+City+Centre",
+    "kind": "direction"
+  },
+  "parking-baldessin": {
+    "name": "Baldessin Precinct Car Park (public, ticketed)",
+    "shortName": "Baldessin Car Park",
+    "address": "Baldessin Precinct, off Ellery Crescent, ANU — verify before publishing",
+    "lat": -35.27710,
+    "lng": 149.12130,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Baldessin+Precinct+car+park+ANU",
+    "kind": "parking"
+  },
+  "parking-willows": {
+    "name": "Willows Oval Car Park (public, ticketed)",
+    "shortName": "Willows Car Park",
+    "address": "Willows Oval, off Liversidge Street, ANU — verify before publishing",
+    "lat": -35.28620,
+    "lng": 149.12060,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Willows+Oval+car+park+ANU",
+    "kind": "parking"
+  }
+}
