@@ -1,29 +1,56 @@
 # Deploys the static site to GitHub Pages on every push to main.
-# One-time setup: repo Settings → Pages → Source: "GitHub Actions".
-# If the site lives at username.github.io/<repo> (not a custom domain),
-# uncomment the NEXT_PUBLIC_BASE_PATH line below.
+#
+# One-time setup (already done for anucssa/techfest-website):
+#   Repo Settings → Pages → Source: "GitHub Actions"
+#   (The configure-pages step below will also auto-enable Pages if it isn't.)
+#
+# Custom domain (techfest.cssa.club): set it in Settings → Pages AFTER the
+# first successful deploy, and leave NEXT_PUBLIC_BASE_PATH commented out.
+# Only if serving from anucssa.github.io/techfest-website instead,
+# uncomment the two env lines below.
 name: Deploy to GitHub Pages
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# Don't run two deploys at once; let an in-flight deploy finish.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Enable / configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: npm }
+        with:
+          node-version: 22
+          cache: npm
+
       - run: npm ci
+
       - run: npm run build
         # env:
-        #   NEXT_PUBLIC_BASE_PATH: /your-repo-name
+        #   NEXT_PUBLIC_BASE_PATH: /techfest-website
+
       - uses: actions/upload-pages-artifact@v3
-        with: { path: out }
+        with:
+          path: out
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
