@@ -31,6 +31,9 @@ module.exports = {
         // The signature "trail" gradient — yellow / blue / green, as on the brief cover
         'trail': 'radial-gradient(120% 120% at 0% 0%, #ffbb34 0%, #67acf1 52%, #3add41 100%)',
         'trail-soft': 'radial-gradient(140% 140% at 0% 0%, rgba(255,187,52,.16) 0%, rgba(103,172,241,.16) 52%, rgba(58,221,65,.16) 100%)',
+        // Deep-tone trail (same yellow→blue→green progression) for tiles that host
+        // white/light logos — every stop clears WCAG AA against white.
+        'trail-deep': 'radial-gradient(120% 120% at 0% 0%, #8a5a12 0%, #1d5fa8 50%, #176b34 100%)',
       },
       keyframes: {
         'fade-up': {
