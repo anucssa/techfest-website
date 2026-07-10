@@ -27,6 +27,15 @@
     "gmaps": "https://www.google.com/maps/search/?api=1&query=Fellows+Oval+ANU",
     "kind": "venue"
   },
+    "copland": {
+    "name": "Copland Courtyard BBQ",
+    "shortName": "Copland Courtyard",
+    "address": "Copland Courtyard, ANU, Acton ACT 2601",
+    "lat": -35.27785,
+    "lng": 149.12301,
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Copland+Courtyard+ANU",
+    "kind": "venue"
+  },
   "dendy": {
     "name": "Dendy Cinemas Canberra",
     "shortName": "Dendy Cinema, Civic",
