@@ -10,11 +10,11 @@ export const metadata = {
 
 const categories = [
   ['OSINT', 'Open-Source Intelligence'],
-  ['Rev', 'Reverse Engineering'],
-  ['Pwn', 'Binary Exploitation'],
-  ['Web', 'Web Exploitation'],
-  ['Crypto', 'Cryptography'],
-  ['Misc', 'Miscellaneous'],
+  ['rev', 'Reverse Engineering'],
+  ['pwn', 'Binary Exploitation'],
+  ['web', 'Web Exploitation'],
+  ['crypto', 'Cryptography'],
+  ['misc', 'Miscellaneous'],
 ];
 
 export default function CtfPage() {
