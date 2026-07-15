@@ -24,7 +24,7 @@
           "icon": "flag",
           "start": "17:00",
           "end": "22:00",
-          "venue": "melville",
+          "venue": "birch",
           "includes": "Includes refreshments",
           "blurb": "The 48-hour BushBash CTF goes live at 5pm. Form a team, meet other players, and start capturing flags across OSINT, Rev, Pwn, Web, Crypto and Misc.",
           "page": "/ctf",
