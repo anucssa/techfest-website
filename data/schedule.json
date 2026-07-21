@@ -63,15 +63,15 @@
         },
         {
           "slug": "movie-night",
-          "title": "Movie Night",
+          "title": "Movie Night: The Matrix",
           "icon": "film",
           "start": "18:00",
-          "end": "22:00",
+          "end": "20:30",
           "venue": "dendy",
           "includes": "",
-          "blurb": "Wind down day two with a movie night at Dendy Cinemas in Civic — inside the Canberra Centre, a short walk or bus ride from campus. Film announced closer to the date.",
+          "blurb": "Wind down day two of Bush Week Tech Fest with our fun, social screening of The Matrix! We’ve booked out a cinema just for us, because there’s no better way to finish a day of hacking than with the classic film about one of pop culture’s most famous fictional hackers. If you’re up to it, break out your sunglasses and a black/leather outfit to watch The Matrix in The-Matrix-style 😎",
           "page": "",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/movie-night-bush-week-techfest", "rubric": "" }
         }
       ]
     },
