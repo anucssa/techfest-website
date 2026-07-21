@@ -27,7 +27,7 @@
     "embedUrl": "",
     "linkUrl": "https://linktr.ee/anucssa",
     "linkLabel": "Register via CSSA Linktree",
-    "note": "Individual event registrations (Humanitix / Rubric) will be linked from each event page as they go live."
+    "note": "Individual event registrations are live on Humanitix (and Rubric, but this is a shortcut to the Humanitix)."
   },
 
   "downloads": [
@@ -37,10 +37,10 @@
 
   "socials": [
     { "label": "Linktree", "url": "https://linktr.ee/anucssa", "icon": "link" },
-    { "label": "Discord", "url": "https://linktr.ee/anucssa", "icon": "discord", "_note": "Replace with your direct Discord invite" },
+    { "label": "Discord", "url": "https://discord.com/invite/UETrGuS", "icon": "discord", "_note": "Replace with your direct Discord invite" },
     { "label": "LinkedIn", "url": "https://www.linkedin.com/company/70999137/", "icon": "linkedin" },
-    { "label": "Instagram", "url": "https://linktr.ee/anucssa", "icon": "instagram", "_note": "Replace with direct Instagram URL" },
-    { "label": "Facebook", "url": "https://linktr.ee/anucssa", "icon": "facebook", "_note": "Replace with direct Facebook URL" },
+    { "label": "Instagram", "url": "https://www.instagram.com/anucssa", "icon": "instagram", "_note": "Replace with direct Instagram URL" },
+    { "label": "Facebook", "url": "https://www.facebook.com/anucssa", "icon": "facebook", "_note": "Replace with direct Facebook URL" },
     { "label": "GitHub", "url": "https://github.com/anucssa", "icon": "github" },
     { "label": "Website", "url": "https://cssa.club", "icon": "globe" }
   ],
@@ -56,5 +56,5 @@
     { "name": "ANU CSSA", "url": "https://cssa.club", "image": "/images/cssa-banner.png" }
   ],
 
-  "disclaimer": "ANU Bush Week Tech Fest is organised by the ANU Computer Science Students' Association (CSSA), a student-run society. The Australian National University provides venue support but this event is organised by students."
+  "disclaimer": "ANU Bush Week Tech Fest is organised by the ANU Computer Science Students' Association (CSSA), a student-run society. The Australian National University provides venue support and a CSS grant but this event is organised by students."
 }
