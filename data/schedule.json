@@ -16,7 +16,7 @@
           "includes": "Includes refreshments",
           "blurb": "A day of computing and cybersecurity talks from industry and academic speakers — ideas talks, deep technical sessions, and true-crime incident stories, in 25 and 50 minute slots.",
           "page": "/tech-talks",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/tech-talks-conference-cssa-bush-week-techfest", "rubric": "" }
         },
         {
           "slug": "ctf-launch",
@@ -69,7 +69,7 @@
           "end": "20:30",
           "venue": "dendy",
           "includes": "",
-          "blurb": "Wind down day two of Bush Week Tech Fest with our fun, social screening of The Matrix! We’ve booked out a cinema just for us, because there’s no better way to finish a day of hacking than with the classic film about one of pop culture’s most famous fictional hackers. If you’re up to it, break out your sunglasses and a black/leather outfit to watch The Matrix in The-Matrix-style 😎",
+          "blurb": "Wind down day two of Bush Week Tech Fest with our fun, social screening of The Matrix! We’ve booked out a cinema just for us, because there’s no better way to finish a day of hacking than with the classic film about one of pop culture’s most famous fictional hackers. <br><br>If you’re up to it, break out your sunglasses and a black/leather outfit to watch The Matrix in The-Matrix-style 😎",
           "page": "",
           "links": { "humanitix": "https://events.humanitix.com/movie-night-bush-week-techfest", "rubric": "" }
         }
@@ -114,7 +114,7 @@
           "includes": "",
           "blurb": "Cap off the festival with an evening of networking and drinks in the city with speakers, sponsors and fellow students.",
           "page": "",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/networking-drinks-cssa-bush-week-techfest", "rubric": "" }
         }
       ]
     }
