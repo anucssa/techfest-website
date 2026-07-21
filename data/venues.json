@@ -29,7 +29,7 @@
   },
     "copland": {
     "name": "Copland Courtyard BBQ",
-    "shortName": "Copland Courtyard",
+    "shortName": "Copland Courtyard BBQ",
     "address": "Copland Courtyard, ANU, Acton ACT 2601",
     "lat": -35.27785,
     "lng": 149.12301,
@@ -45,14 +45,14 @@
     "gmaps": "https://www.google.com/maps/search/?api=1&query=Dendy+Cinemas+Canberra",
     "kind": "venue"
   },
-  "cbd": {
-    "name": "Canberra City Centre",
-    "shortName": "Canberra CBD",
-    "address": "Canberra City Centre, ACT 2601 — exact venues announced on each event page",
-    "lat": -35.27845,
-    "lng": 149.12801,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Canberra+City+Centre",
-    "kind": "direction"
+  "verity-lane": {
+    "name": "Bar Lola at Verity Lane",
+    "shortName": "Bar Lola at Verity Lane",
+    "address": "98 Alinga St, Canberra ACT 2601",
+    "lat": -35.27850,
+    "lng": 149.12971,
+    "gmaps": "https://www.google.com/maps/place/Bar+Lola/@-35.2786527,149.1271494,946m/data=!3m3!1e3!4b1!5s0x6af1853185e338df:0xb62949e02ef1165b!4m6!3m5!1s0x6b164d4371c92b73:0x427ffa2c8568ed25!8m2!3d-35.2786571!4d149.1297243!16s%2Fg%2F11xdhpbftf?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+    "kind": "venue"
   },
   "parking-birch": {
     "name": "Birch Building Car Park (public, ticketed)",
@@ -79,6 +79,24 @@
     "lat": -35.27477,
     "lng": 149.12112,
     "gmaps": "https://www.google.com/maps/place/Parking+lot,+Acton+ACT+2601/@-35.2747728,149.1211254,164m/data=!3m1!1e3!4m14!1m7!3m6!1s0x6b164d5ca351f179:0xf00ea6f8b574360!2sWillows+Oval+Anu+campus!8m2!3d-35.274857!4d149.1227267!16s%2Fg%2F1tlvppnw!3m5!1s0x6b164d5ca01e66fb:0x86bb2cd209581cc4!8m2!3d-35.2744691!4d149.1216665!16s%2Fg%2F11cpmgsky6?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
+    "kind": "parking"
+  },
+  "parking-canberra-centre-underground": {
+    "name": "Canberra Centre Underground Car Park (public, ticketed)",
+    "shortName": "Canberra Centre Underground Car Park",
+    "address": "Scotts Crossing, Canberra ACT 2601",
+    "lat": -35.27741,
+    "lng": 149.13395,
+    "gmaps": "https://www.google.com/maps/place/Canberra+Centre+Underground+Car+Park/@-35.2795913,149.1329315,946m/data=!3m1!1e3!4m14!1m7!3m6!1s0x6b164d003e8265e9:0x9704d2578d511506!2sCanberra+Centre+Car+Park+Entrance!8m2!3d-35.2795957!4d149.1355064!16s%2Fg%2F11x_lfqzv_!3m5!1s0x6b164d00257dbdff:0x2c97c9d69d2985b8!8m2!3d-35.2776245!4d149.1339728!16s%2Fg%2F11vq36vb9g?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+    "kind": "parking"
+  },
+  "parking-canberra-centre": {
+    "name": "Canberra Centre Car Park (public, ticketed)",
+    "shortName": "Canberra Centre Car Park",
+    "address": "Shop DG09/148 Bunda St, Canberra ACT 2601",
+    "lat": -35.27942,
+    "lng": 149.13578,
+    "gmaps": "https://www.google.com/maps/place/Canberra+Centre+Car+Park+Entrance/@-35.2795913,149.1329315,946m/data=!3m1!1e3!4m7!3m6!1s0x6b164d003e8265e9:0x9704d2578d511506!4b1!8m2!3d-35.2795957!4d149.1355064!16s%2Fg%2F11x_lfqzv_?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
     "kind": "parking"
   }
 }

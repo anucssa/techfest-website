@@ -24,11 +24,11 @@
           "icon": "flag",
           "start": "17:00",
           "end": "22:00",
-          "venue": "birch",
+          "venue": "melville",
           "includes": "Includes refreshments",
           "blurb": "The 48-hour BushBash CTF goes live at 5pm. Form a team, meet other players, and start capturing flags across OSINT, Rev, Pwn, Web, Crypto and Misc.",
           "page": "/ctf",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest", "rubric": "" }
         }
       ]
     },
@@ -47,7 +47,7 @@
           "includes": "Includes refreshments",
           "blurb": "The competition continues all day in Melville Hall, with non-technical brain-break activities like GeoGuessr and Wikipedia racing alongside the main board.",
           "page": "/ctf",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest", "rubric": "" }
         },
         {
           "slug": "bbq-saturday",
@@ -59,7 +59,7 @@
           "includes": "Free food",
           "blurb": "Free BBQ lunch at Copland Courtyard BBQ for everyone at the festival.",
           "page": "",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/bbq-bushbash-day-2-cssa-bush-week-tech-fest", "rubric": "" }
         },
         {
           "slug": "movie-night",
@@ -90,7 +90,7 @@
           "includes": "Includes pizza dinner",
           "blurb": "The final hours of the CTF, the closing ceremony, winner announcements and prizes — followed by pizza.",
           "page": "/ctf",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest", "rubric": "" }
         },
         {
           "slug": "bbq-sunday",
@@ -102,7 +102,7 @@
           "includes": "Free food",
           "blurb": "Free BBQ lunch on Fellows Oval — day two.",
           "page": "",
-          "links": { "humanitix": "", "rubric": "" }
+          "links": { "humanitix": "https://events.humanitix.com/bbq-bushbash-day-3-cssa-bush-week-tech-fest", "rubric": "" }
         },
         {
           "slug": "networking-drinks",
@@ -110,7 +110,7 @@
           "icon": "drinks",
           "start": "18:00",
           "end": "22:00",
-          "venue": "cbd",
+          "venue": "verity-lane",
           "includes": "",
           "blurb": "Cap off the festival with an evening of networking and drinks in the city with speakers, sponsors and fellow students.",
           "page": "",

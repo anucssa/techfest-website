@@ -161,7 +161,7 @@ export default function Home() {
         id="map"
         eyebrow="Getting there"
         title="Campus map & parking"
-        lead="Tech Talks run in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are on Fellows Oval. Movie night is at Dendy Cinemas in Civic, and the networking night is nearby in the city centre — follow the green dashed line. Public ticketed car parks are marked with a yellow P."
+        lead="Tech Talk Conference runs in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are in Copland Courtyard and Fellows Oval. Movie night is at Dendy Cinemas in Civic, and the Networking and Drinks Night is in Bar Lola at Verity Lane. Public ticketed car parks are marked with a yellow P."
       >
         <CampusMap />
       </Section>
