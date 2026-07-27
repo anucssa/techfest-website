@@ -146,13 +146,13 @@
       "recording": ""
     },
     {
-      "name": "Remy Coll, Miranda Riddel, and James Thomson",
+      "name": "Remy Coll, Miranda Riddell, James Thomson, and Simon Smalley",
       "photo": "/images/speakers/Cyber Industry Panel/cyber-industry-panel.jpg",
       "company": "Redacted Information Security & Malware Security",
       "companyUrl": "https://redacted.au",
       "companyLogo": "/images/speakers/Company Logos/redacted.png",
       "talkTitle": "Cyber Industry in Canberra Panel",
-      "abstract": "A panel on the cyber security industry in Canberra, featuring practitioners from local firms including Redacted Information Security and Malware Security. Remy is Head Instructor of AusISA and Director at Redacted Information Security, Miranda is Manager and AI Security Consultant at Malware Security, and James is the Principal Cyber Security Consultant and Director of Malware Security.",
+      "abstract": "A panel on the cyber security industry in Canberra, featuring practitioners from local firms including Redacted Information Security and Malware Security. Remy is Head Instructor of AusISA and Director at Redacted Information Security, Miranda is Manager and AI Security Consultant at Malware Security, James is the Principal Cyber Security Consultant and Director of Malware Security, and Simon is Director and Principal Consultant at Redacted Information Security.",
       "bio": "Miranda\n\nMiranda is Manager and AI Security Consultant at Malware Security, leading delivery of offensive security engagements for government, defence and critical infrastructure. Beginning her career in the ACSC's Cyber Hygiene Improvement Programs (CHIPs) team, she is now one of few Australian practitioners actively red-teaming AI systems and tracking emerging adversary tradecraft. She enjoys breaking things to understand how they work, and using that insight to help organisations assess risk, map attack surfaces, and secure frontier technologies. In her spare time, she also builds bespoke AI solutions for clients where the challenge is too interesting to ignore. She is an ANU School of Computer Science Alumni.\n\nRemy\n\nHead Instructor of AusISA and Director at Redacted Information Security. Remy has over a decade of experience across Federal Government, law enforcement and the military. He is an IRAP Assessor, GIAC Certified Security Leader, ISO 27001 Lead Auditor, and other . He has a background in ADF Cyber where he commanded the first Army Cyber Protection Team. Remy has experience working within many commercial organisations, government departments and military units. Redacted makes Red Team tools, develops capability for Defence projects, and produces an AI platform for government security assessments.",
       "slot": "30 min",
       "time": "15:15",
