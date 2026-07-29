@@ -49,9 +49,10 @@ export default function Footer() {
               <li key={l.name}>
                 <a href={l.url} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-bold text-ink hover:underline dark:text-white">
-                  {l.image?.includes('cssa-banner') ? (
+                  {l.image ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img src={asset(l.image)} alt={`${l.name} logo`} className="h-9 w-auto rounded bg-white p-1" />
+                    <img src={asset(l.image)} alt={`${l.name} logo`}
+                      className={`h-9 w-auto rounded p-1.5 ${l.theme === 'dark' ? 'bg-ink' : 'bg-white'}`} />
                   ) : (
                     <span className="rounded-lg border-2 border-current px-3 py-1 text-sm">{l.name}</span>
                   )}

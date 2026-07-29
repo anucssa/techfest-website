@@ -37,13 +37,20 @@
 
   "socials": [
     { "label": "Linktree", "url": "https://linktr.ee/anucssa", "icon": "link" },
-    { "label": "Discord", "url": "https://discord.com/invite/UETrGuS", "icon": "discord", "_note": "Replace with your direct Discord invite" },
+    { "label": "Discord", "url": "https://discord.com/invite/UETrGuS", "icon": "discord" },
     { "label": "LinkedIn", "url": "https://www.linkedin.com/company/70999137/", "icon": "linkedin" },
-    { "label": "Instagram", "url": "https://www.instagram.com/anucssa", "icon": "instagram", "_note": "Replace with direct Instagram URL" },
-    { "label": "Facebook", "url": "https://www.facebook.com/anucssa", "icon": "facebook", "_note": "Replace with direct Facebook URL" },
+    { "label": "Instagram", "url": "https://www.instagram.com/anucssa", "icon": "instagram" },
+    { "label": "Facebook", "url": "https://www.facebook.com/anucssa", "icon": "facebook" },
     { "label": "GitHub", "url": "https://github.com/anucssa", "icon": "github" },
     { "label": "Website", "url": "https://cssa.club", "icon": "globe" }
   ],
+
+  "remote": {
+    "_note": "Remote participation settings. When CommBank issues the panel video-call link, paste it into commbankCallUrl — the join buttons on /remote/ and the Tech Talks page switch from 'coming soon' to live automatically. No code changes needed.",
+    "commbankCallUrl": "",
+    "commbankCallPlatform": "CommBank video call (Microsoft Teams)",
+    "commbankCallTime": "Friday 31 July · 1:45pm – 2:35pm AEST"
+  },
 
   "contacts": [
     { "name": "Peter Woodhead", "role": "Event Organiser · CSSA Cybersecurity Officer", "email": "peter.woodhead@protonmail.com", "linkedin": "https://www.linkedin.com/in/peterwoodhead/" },
@@ -51,9 +58,8 @@
   ],
 
   "footerLogos": [
-    { "name": "ANU", "url": "https://www.anu.edu.au", "image": "/images/anu-logo.png", "_note": "Drop the official ANU logo at public/images/anu-logo.png (renders as a text link until then)" },
-    { "name": "ANU School of Computing", "url": "https://comp.anu.edu.au", "image": "/images/soco-logo.png", "_note": "Drop the SoCo logo at public/images/soco-logo.png" },
-    { "name": "ANU CSSA", "url": "https://cssa.club", "image": "/images/cssa-banner.png" }
+    { "name": "Australian National University · ANU College of Systems & Society", "url": "https://systems.anu.edu.au", "image": "/images/anu-logo-with-css-banner.png", "theme": "dark", "_note": "White combined ANU + College of Systems & Society lockup — theme: 'dark' renders it on a dark tile so it stays visible in light mode." },
+    { "name": "ANU CSSA", "url": "https://cssa.club", "image": "/images/cssa-banner.png", "theme": "light" }
   ],
 
   "disclaimer": "ANU Bush Week Tech Fest is organised by the ANU Computer Science Students' Association (CSSA), a student-run society. The Australian National University provides venue support and a CSS grant but this event is organised by students."

@@ -1,11 +1,28 @@
+import Link from 'next/link';
 import Icon from '@/components/Icon';
 import Countdown from '@/components/Countdown';
-import { site, venues, asset } from '@/lib/data';
+import { site, venues, asset, absUrl } from '@/lib/data';
+
+const description =
+  'A beginner-friendly, team-based 48-hour Jeopardy-style capture-the-flag — 5pm 31 July to 5pm 2 August 2026 AEST, in person at ANU and online, with a live scoreboard and prizes.';
 
 export const metadata = {
   title: 'BushBash CTF',
-  description:
-    'A beginner-friendly, team-based 48-hour capture-the-flag competition — 31 July to 2 August 2026 at ANU, with a live scoreboard and prizes.',
+  description,
+  openGraph: {
+    type: 'website',
+    url: absUrl('/ctf/'),
+    siteName: site.name,
+    title: `BushBash CTF · ${site.name} 2026`,
+    description,
+    images: [{ url: absUrl('/images/og-ctf.png'), width: 1200, height: 630, alt: 'BushBash CTF — 48 hours, 31 July to 2 August 2026, ANU and online' }],
+    locale: 'en_AU',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `BushBash CTF · ${site.name} 2026`,
+    images: [absUrl('/images/og-ctf.png')],
+  },
 };
 
 const categories = [
@@ -43,8 +60,9 @@ export default function CtfPage() {
             BushBash <span className="trail-text-bright">CTF</span>
           </h1>
           <p className="max-w-2xl text-xl text-slate-300">
-            Team-based competitive puzzle solving, vulnerability analysis and software exploitation. Find the flag,
-            submit it, climb the live scoreboard — no experience required.
+            Team-based competitive puzzle solving, vulnerability analysis and software exploitation, Jeopardy-style.
+            Find the flag, submit it, climb the live scoreboard — no experience required. Play in person at Melville
+            Hall or online from anywhere: students from other universities and institutions are welcome.
           </p>
           <div className="flex flex-wrap gap-3">
             <a href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer" className="btn-trail text-xl !px-8 !py-4">
@@ -81,6 +99,30 @@ export default function CtfPage() {
                 challenges — BushBash tightens the format to an action-packed 48 hours with a bigger focus on
                 in-person play, plus brain-break activities like GeoGuessr and Wikipedia racing.
               </p>
+              <p>
+                Under the hood, BushBash runs on the <strong>noCTF</strong> platform created by the team at Down
+                Under CTF, with challenges hosted on Kubernetes using <strong>kCTF</strong> — all on Google Cloud
+                infrastructure. Quality over quantity is the priority this time (and yes, there will be infra pixel
+                art).
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-extrabold text-ink dark:text-white">Finale &amp; prize ceremony</h2>
+            <div className="card mt-5 flex flex-col gap-4 p-6 sm:flex-row sm:items-center">
+              <span className="inline-flex w-fit rounded-xl bg-trail-soft p-3 text-ink dark:text-white">
+                <Icon name="trophy" className="h-7 w-7" />
+              </span>
+              <p className="text-slate-600 dark:text-slate-300">
+                Flags close at <strong className="text-ink dark:text-white">5pm Sunday 2 August</strong>. From{' '}
+                <strong className="text-ink dark:text-white">5:00–5:30pm</strong>,{' '}
+                <strong className="text-ink dark:text-white">Kylie McDevitt (CEO)</strong> and{' '}
+                <strong className="text-ink dark:text-white">Silvio Cesare (CTO)</strong> of{' '}
+                <a href="https://www.infosectcbr.com.au" target="_blank" rel="noopener noreferrer" className="font-semibold text-sign-blue hover:underline dark:text-brand-blue">InfoSect</a>{' '}
+                co-present the closing ceremony, prizes and award certificates in Melville Hall — followed by pizza
+                dinner.
+              </p>
             </div>
           </section>
 
@@ -103,10 +145,10 @@ export default function CtfPage() {
           <div className="card p-6">
             <h2 className="text-lg font-extrabold text-ink dark:text-white">Fast facts</h2>
             <ul className="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
-              <li className="flex gap-3"><Icon name="clock" className="h-5 w-5 shrink-0 text-brand-blue" /> 48 hours: Fri 5pm launch → Sun 5:30pm finale &amp; prizes</li>
-              <li className="flex gap-3"><Icon name="pin" className="h-5 w-5 shrink-0 text-brand-blue" /> In person at Melville Hall, ANU (play online too)</li>
-              <li className="flex gap-3"><Icon name="trophy" className="h-5 w-5 shrink-0 text-brand-blue" /> Prizes at the Sunday closing ceremony, with pizza dinner</li>
-              <li className="flex gap-3"><Icon name="flag" className="h-5 w-5 shrink-0 text-brand-blue" /> Beginner friendly and team based — challenges worth 100–500 points</li>
+              <li className="flex gap-3"><Icon name="clock" className="h-5 w-5 shrink-0 text-brand-blue" /> 48 hours: Fri 5pm launch → Sun 5pm flags close (AEST)</li>
+              <li className="flex gap-3"><Icon name="pin" className="h-5 w-5 shrink-0 text-brand-blue" /> In person at Melville Hall, ANU — or play online from any university</li>
+              <li className="flex gap-3"><Icon name="trophy" className="h-5 w-5 shrink-0 text-brand-blue" /> Prize ceremony Sun 5–5:30pm, presented by InfoSect&apos;s Kylie McDevitt &amp; Silvio Cesare, with pizza dinner</li>
+              <li className="flex gap-3"><Icon name="flag" className="h-5 w-5 shrink-0 text-brand-blue" /> Beginner friendly, team based, Jeopardy-style — challenges worth 100–500 points</li>
             </ul>
           </div>
           <div className="card p-6">
@@ -123,8 +165,11 @@ export default function CtfPage() {
               </a>
             </div>
             <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
-              Team registration, a live scoreboard embed, and a countdown will land on this page as the event
-              approaches.
+              Playing from off campus? See{' '}
+              <Link href="/remote/" className="font-semibold text-sign-blue hover:underline dark:text-brand-blue">
+                remote participation
+              </Link>{' '}
+              for how online play works.
             </p>
           </div>
         </aside>

@@ -13,8 +13,8 @@
           "start": "10:00",
           "end": "16:00",
           "venue": "birch",
-          "includes": "Includes refreshments",
-          "blurb": "A day of computing and cybersecurity talks from industry and academic speakers — ideas talks, deep technical sessions, and true-crime incident stories, in 25 and 50 minute slots.",
+          "includes": "Includes morning tea & lunch",
+          "blurb": "A day of computing and cybersecurity talks from industry and academic speakers — ideas talks, deep technical sessions, and true-crime incident stories, in 25 and 50 minute slots. Morning tea (11:45am–12pm) and lunch (1–1:45pm) provided — indicate dietary requirements when registering on Humanitix.",
           "page": "/tech-talks",
           "links": { "humanitix": "https://events.humanitix.com/tech-talks-conference-cssa-bush-week-techfest", "rubric": "" }
         },
@@ -26,7 +26,7 @@
           "end": "22:00",
           "venue": "melville",
           "includes": "Includes refreshments",
-          "blurb": "The 48-hour BushBash CTF goes live at 5pm. Form a team, meet other players, and start capturing flags across OSINT, Rev, Pwn, Web, Crypto and Misc.",
+          "blurb": "The 48-hour BushBash CTF goes live at 5pm — doors open from 4:45pm. Form a team, meet other players, and start capturing flags across OSINT, Rev, Pwn, Web, Crypto and Misc.",
           "page": "/ctf",
           "links": { "humanitix": "https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest", "rubric": "" }
         }
@@ -42,7 +42,7 @@
           "title": "BushBash CTF — Day Two",
           "icon": "flag",
           "start": "10:00",
-          "end": "20:00",
+          "end": "22:00",
           "venue": "melville",
           "includes": "Includes refreshments",
           "blurb": "The competition continues all day in Melville Hall, with non-technical brain-break activities like GeoGuessr and Wikipedia racing alongside the main board.",
@@ -88,7 +88,7 @@
           "end": "17:30",
           "venue": "melville",
           "includes": "Includes pizza dinner",
-          "blurb": "The final hours of the CTF, the closing ceremony, winner announcements and prizes — followed by pizza.",
+          "blurb": "The final hours of the CTF — flags close at 5pm sharp. Then from 5:00–5:30pm, Kylie McDevitt (CEO) and Silvio Cesare (CTO) of InfoSect co-present the closing ceremony, prizes and award certificates — followed by pizza.",
           "page": "/ctf",
           "links": { "humanitix": "https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest", "rubric": "" }
         },
@@ -111,8 +111,8 @@
           "start": "18:00",
           "end": "22:00",
           "venue": "verity-lane",
-          "includes": "",
-          "blurb": "Cap off the festival with an evening of networking and drinks in the city with speakers, sponsors and fellow students.",
+          "includes": "Two drink tokens + food per ticket",
+          "blurb": "Cap off the festival with an evening of networking and drinks in the city with speakers, sponsors and fellow students. We've booked out Bar Lola and Dear Prudence at Verity Lane Market for up to 100 guests, and every $7.50 dirt-cheap ticket gets you two drink tokens and food. 18+ — bring photo ID.",
           "page": "",
           "links": { "humanitix": "https://events.humanitix.com/networking-drinks-cssa-bush-week-techfest", "rubric": "" }
         }

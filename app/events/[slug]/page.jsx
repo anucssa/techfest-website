@@ -2,7 +2,16 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Icon from '@/components/Icon';
 import EventActions from '@/components/EventActions';
-import { site, allEvents, eventBySlug, venues, formatTime, toISO } from '@/lib/data';
+import { site, allEvents, eventBySlug, venues, formatTime, toISO, absUrl } from '@/lib/data';
+
+// Event pages tied to a dedicated page reuse that page's OG image; the rest fall
+// back to the festival-wide card.
+const OG_IMAGES = {
+  'tech-talks': '/images/og-tech-talks.png',
+  'ctf-launch': '/images/og-ctf.png',
+  'bushbash-ctf-day-two': '/images/og-ctf.png',
+  'ctf-finale': '/images/og-ctf.png',
+};
 
 // One page per schedule entry, generated at build time from data/schedule.json.
 export function generateStaticParams() {
@@ -12,10 +21,20 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const e = eventBySlug(params.slug);
   if (!e) return {};
+  const ogImage = absUrl(OG_IMAGES[e.slug] || '/images/og.png');
   return {
     title: e.title,
     description: `${e.blurb} ${e.day}, ${formatTime(e.start)}–${formatTime(e.end)}, ${venues[e.venue].shortName}.`,
-    openGraph: { title: `${e.title} · ${site.name} 2026`, description: e.blurb },
+    openGraph: {
+      type: 'website',
+      url: absUrl(`/events/${e.slug}/`),
+      siteName: site.name,
+      title: `${e.title} · ${site.name} 2026`,
+      description: e.blurb,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${e.title} — ${site.name} 2026` }],
+      locale: 'en_AU',
+    },
+    twitter: { card: 'summary_large_image', title: `${e.title} · ${site.name} 2026`, images: [ogImage] },
   };
 }
 

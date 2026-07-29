@@ -8,6 +8,7 @@ const nav = [
   { href: '/#schedule', label: 'Schedule' },
   { href: '/tech-talks/', label: 'Tech Talks' },
   { href: '/ctf/', label: 'BushBash CTF' },
+  { href: '/remote/', label: 'Remote' },
   { href: '/#map', label: 'Map & Parking' },
   { href: '/#sponsors', label: 'Sponsors' },
   { href: '/#contact', label: 'Contact' },

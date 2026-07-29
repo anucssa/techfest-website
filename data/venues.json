@@ -46,11 +46,11 @@
     "kind": "venue"
   },
   "verity-lane": {
-    "name": "Bar Lola at Verity Lane",
-    "shortName": "Bar Lola at Verity Lane",
-    "address": "98 Alinga St, Canberra ACT 2601",
-    "lat": -35.27850,
-    "lng": 149.12971,
+    "name": "Verity Lane Market — Bar Lola & Dear Prudence",
+    "shortName": "Verity Lane Market (Bar Lola & Dear Prudence)",
+    "address": "Verity Lane Market, 50 Northbourne Ave, Canberra ACT 2601 (enter via Verity Lane)",
+    "lat": -35.27770,
+    "lng": 149.12940,
     "gmaps": "https://www.google.com/maps/place/Bar+Lola/@-35.2786527,149.1271494,946m/data=!3m3!1e3!4b1!5s0x6af1853185e338df:0xb62949e02ef1165b!4m6!3m5!1s0x6b164d4371c92b73:0x427ffa2c8568ed25!8m2!3d-35.2786571!4d149.1297243!16s%2Fg%2F11xdhpbftf?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
     "kind": "venue"
   },

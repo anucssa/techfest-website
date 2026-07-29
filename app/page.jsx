@@ -85,8 +85,8 @@ export default function Home() {
             { icon: 'flag', title: 'BushBash CTF', text: 'A beginner-friendly, team-based 48-hour CTF across OSINT, Rev, Pwn, Web, Crypto and Misc — with a live scoreboard and a serious prize pool.', href: '/ctf/' },
             { icon: 'bbq', title: 'Free BBQs', text: 'Free BBQ lunches on Fellows Oval on Saturday and Sunday, plus refreshments throughout the festival.', href: '/events/bbq-saturday/' },
             { icon: 'film', title: 'Movie Night', text: 'Saturday evening wind-down in the city after a full day of flags.', href: '/events/movie-night/' },
-            { icon: 'drinks', title: 'Networking & Drinks', text: 'Meet speakers, sponsors, and the ANU computing and cyber community on Sunday night.', href: '/events/networking-drinks/' },
-            { icon: 'trophy', title: 'Finale & Prizes', text: 'CTF closing ceremony with winner announcements, prizes, and pizza dinner on Sunday.', href: '/events/ctf-finale/' },
+            { icon: 'drinks', title: 'Networking & Drinks', text: 'Meet speakers, sponsors, and the ANU computing and cyber community on Sunday night at Verity Lane Market — $7.50 tickets include two drink tokens and food.', href: '/events/networking-drinks/' },
+            { icon: 'trophy', title: 'Finale & Prizes', text: 'CTF closing ceremony 5–5:30pm Sunday: InfoSect\'s Kylie McDevitt and Silvio Cesare present the prizes and certificates, then pizza dinner.', href: '/events/ctf-finale/' },
           ].map((c) => (
             <Link key={c.title} href={c.href} className="card group p-6 transition hover:-translate-y-0.5 hover:shadow-md">
               <span className="inline-flex rounded-xl bg-trail-soft p-3 text-ink dark:text-white">
@@ -161,7 +161,7 @@ export default function Home() {
         id="map"
         eyebrow="Getting there"
         title="Campus map & parking"
-        lead="Tech Talk Conference runs in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are in Copland Courtyard and Fellows Oval. Movie night is at Dendy Cinemas in Civic, and the Networking and Drinks Night is in Bar Lola at Verity Lane. Public ticketed car parks are marked with a yellow P."
+        lead="Tech Talk Conference runs in the Birch Building Innovation Space, the CTF lives in Melville Hall, and BBQs are in Copland Courtyard and Fellows Oval. Movie night is at Dendy Cinemas in Civic, and the Networking and Drinks Night is at Bar Lola & Dear Prudence in Verity Lane Market (50 Northbourne Ave). Public ticketed car parks are marked with a yellow P."
       >
         <CampusMap />
       </Section>

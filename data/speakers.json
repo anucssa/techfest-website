@@ -1,5 +1,5 @@
 {
-  "_readme": "Tech Talks speaker list. The page shows a 'speakers announced soon' state while this list is empty. To add a speaker: copy the template below into the speakers array, drop a square photo into public/images/speakers/, and rebuild. Slide-deck download buttons appear automatically once 'slides' is set.",
+  "_readme": "Tech Talks programme. Regular speakers use the 'template' shape. Panels additionally set panel: true and a 'panelists' array — each panelist gets a photo chip and an expandable bio on the page. 'breaks' are rendered into the timeline between talks by start time. Set videoCallJoin: true on the session that is delivered remotely — its join button reads the link from site.json → remote.commbankCallUrl. Slide-deck download buttons appear automatically once 'slides' is set.",
   "announced": true,
   "template": {
     "name": "Speaker Name",
@@ -9,6 +9,7 @@
     "companyLogo": "/images/speakers/company-logo.png",
     "talkTitle": "Talk title goes here",
     "abstract": "One-paragraph talk abstract.",
+    "bio": "One-paragraph speaker bio (shown in an expandable 'About the speaker' section).",
     "slot": "25 min",
     "time": "10:30",
     "linkedin": "https://www.linkedin.com/in/...",
@@ -16,6 +17,22 @@
     "slides": "",
     "recording": ""
   },
+  "breaks": [
+    {
+      "time": "11:45",
+      "end": "12:00",
+      "title": "Morning Tea",
+      "icon": "clock",
+      "note": "Light refreshments provided. Please indicate any dietary requirements when registering on Humanitix."
+    },
+    {
+      "time": "13:00",
+      "end": "13:45",
+      "title": "Lunch",
+      "icon": "bbq",
+      "note": "Lunch provided. Registration on Humanitix is the right place to indicate your dietary requirements."
+    }
+  ],
   "speakers": [
     {
       "name": "Peter Woodhead",
@@ -54,7 +71,7 @@
       "photo": "/images/speakers/kaitlin-wickham.jpg",
       "company": "ANU Information Security Office",
       "companyUrl": "https://services.anu.edu.au/business-units/information-security-office",
-      "companyLogo": "/images/speakers/Company Logos/anu-logo.jpg",
+      "companyLogo": "/images/speakers/Company Logos/anu-logo.jpeg",
       "talkTitle": "A Day in the Life of a Cyber Security Analyst",
       "abstract": "Have you ever wondered what happens when a hacker tries to hack a big organisation? Is someone paying attention? Who? How? Come along to hear one of the University's own cyber security analysts talk about what it's like to identify malicious behaviour and stop it spreading across the University network. We'll cover some high-level concepts for understanding how cyber threat actors work and how that informs what a Security Operations Centre does to defend. For the cyber nerds, we'll also get into threat hunting and threat intelligence, what an alert is and why it's the start of uncovering active intrusions, the MITRE ATT&CK framework, and a few other things — and if that was gobbledegook to you, don't worry: no technical experience or expertise is necessary. Hope to see you there!",
       "bio": "KT Wickham (she/they) is a Cyber Security Analyst within the Information Security Office at the Australian National University. For almost six years, they've worked within the University's Cyber Integration Centre focusing on endpoint-based detections, incident response, and automation. She loves data science and has done significant analysis of MITRE ATT&CK TTPs, mitigations, and other incident trends. Before the Information Security Office, she worked at ANU's Cyber Institute as a research assistant and studied maths and international relations at the ANU. On the weekends, you can find them camping, hiking, or reading a good book.",
@@ -114,52 +131,140 @@
       "recording": ""
     },
     {
-      "name": "Harrison Mitchel, Samuel Ward, James Campbell and moderator Richard Buckland",
-      "photo": "images/speakers/CommBank Panel/commbank-panel.jpg",
+      "name": "Harrison Mitchell, Samuel Ward & James Campbell · moderated by Richard Buckland",
+      "panel": true,
+      "videoCallJoin": true,
+      "photo": "/images/speakers/CommBank Panel/commbank-panel.jpg",
       "company": "Commonwealth Bank of Australia",
-      "companyUrl": "https://www.cysea.org.au",
+      "companyUrl": "https://www.commbank.com.au",
       "companyLogo": "/images/speakers/Company Logos/cysea.webp",
       "talkTitle": "Panel Discussion with CommBank Executives: ANU Exclusive",
-      "abstract": "An ANU-exclusive panel with three cybersecurity leaders from the Commonwealth Bank of Australia, moderated by Professor Richard Buckland (UNSW, director of CySEA). Harrison Mitchel, Senior Offensive AI Researcher (Red Teaming), thinks like an attacker to uncover weaknesses and help teams understand how threats operate. Samuel Ward, Senior Manager in CommBank's Purple Team, brings together offensive and defensive security, turning attack-simulation learnings into practical improvements to detection and response. James Campbell, Senior Cyber Detection Engineer, focuses on spotting and responding to threats in real time through data analysis and alert investigation. Delivered remotely via Teams (50 minutes).",
+      "abstract": "An ANU-exclusive panel with three cybersecurity leaders from the Commonwealth Bank of Australia, moderated by Professor Richard Buckland (UNSW, director of CySEA). The panel is delivered remotely by video call (50 minutes) — watch it live with everyone in the Birch Building, or join the call from wherever you are.",
       "bio": "",
       "slot": "50 min",
       "time": "13:45",
-      "linkedin": "https://www.linkedin.com/in/richard-buckland/",
-      "website": "https://www.unsw.edu.au/staff/richard-buckland",
+      "linkedin": "",
+      "website": "",
       "slides": "",
-      "recording": ""
+      "recording": "",
+      "panelists": [
+        {
+          "name": "Harrison Mitchell",
+          "role": "Senior Offensive AI Researcher (Red Teaming), CommBank",
+          "photo": "/images/speakers/CommBank Panel/harrison-mitchell.png",
+          "bio": "Harrison thinks like an attacker to uncover weaknesses and help teams understand how threats operate, researching offensive uses of AI as part of CommBank's red team."
+        },
+        {
+          "name": "Samuel Ward",
+          "role": "Senior Manager, Purple Team, CommBank",
+          "photo": "/images/speakers/CommBank Panel/samuel-ward.png",
+          "bio": "Samuel brings together offensive and defensive security, turning attack-simulation learnings into practical improvements to detection and response."
+        },
+        {
+          "name": "James Campbell",
+          "role": "Senior Cyber Detection Engineer, CommBank",
+          "photo": "/images/speakers/CommBank Panel/james-campbell.png",
+          "bio": "James focuses on spotting and responding to threats in real time through data analysis and alert investigation."
+        },
+        {
+          "name": "Richard Buckland",
+          "role": "Moderator · Professor of Cybercrime, UNSW · Director, CySEA",
+          "photo": "/images/speakers/CommBank Panel/richard-buckland.jpeg",
+          "bio": "Professor Richard Buckland teaches cybercrime, cyberterror and cyberwar at UNSW, is a multi-award-winning educator, and directs the Cyber Security Education Alliance (CySEA).",
+          "linkedin": "https://www.linkedin.com/in/richard-buckland/",
+          "website": "https://www.unsw.edu.au/staff/richard-buckland"
+        }
+      ]
     },
     {
-      "name": "Xiaoyu Sun, Dianshao Liu, Kaiwen, and Alwen Tiu",
+      "name": "Xiaoyu Sun, Dianshu Liao, Kaiwen & Alwen Tiu",
+      "panel": true,
       "photo": "/images/speakers/Academia Panel/anu-academia-panel.jpg",
       "company": "Australian National University (ANU)",
       "companyUrl": "https://www.anu.edu.au",
-      "companyLogo": "/images/speakers/Company Logos/anu-logo",
+      "companyLogo": "/images/speakers/Company Logos/anu-logo.jpeg",
       "talkTitle": "Academia Panel: Computing and Cyber Research at ANU",
-      "abstract": "An academic panel exploring current computing and cyber security research at the Australian National University, featuring ANU researchers Xiaoyu Sun, Dianshao Liu, Kaiwen, and Alwen Tiu.",
+      "abstract": "An academic panel exploring current computing and cyber security research at the Australian National University — what the School of Computing is working on right now, and how students can get involved in research.",
       "bio": "",
       "slot": "30 min",
       "time": "14:45",
-      "linkedin": "https://www.linkedin.com/in/xiaoyu-sun-89692a117/",
-      "website": "https://sunxiaobiu.github.io",
+      "linkedin": "",
+      "website": "",
       "slides": "",
-      "recording": ""
+      "recording": "",
+      "panelists": [
+        {
+          "name": "Xiaoyu Sun",
+          "role": "ANU School of Computing",
+          "photo": "/images/speakers/Academia Panel/xiaoyu-sun.jpeg",
+          "bio": "",
+          "linkedin": "https://www.linkedin.com/in/xiaoyu-sun-89692a117/",
+          "website": "https://sunxiaobiu.github.io"
+        },
+        {
+          "name": "Dianshu Liao",
+          "role": "ANU School of Computing",
+          "photo": "/images/speakers/Academia Panel/dianshu-liao.jpeg",
+          "bio": ""
+        },
+        {
+          "name": "Kaiwen",
+          "role": "ANU School of Computing",
+          "photo": "",
+          "bio": ""
+        },
+        {
+          "name": "Alwen Tiu",
+          "role": "ANU School of Computing",
+          "photo": "/images/speakers/Academia Panel/alwen-tiu.jpeg",
+          "bio": ""
+        }
+      ]
     },
     {
-      "name": "Remy Coll, Miranda Riddell, James Thomson, and Simon Smalley",
+      "name": "Remy Coll, Miranda Riddell, James Thomson & Simon Smalley",
+      "panel": true,
       "photo": "/images/speakers/Cyber Industry Panel/cyber-industry-panel.jpg",
       "company": "Redacted Information Security & Malware Security",
       "companyUrl": "https://redacted.au",
       "companyLogo": "/images/speakers/Company Logos/redacted.png",
       "talkTitle": "Cyber Industry in Canberra Panel",
-      "abstract": "A panel on the cyber security industry in Canberra, featuring practitioners from local firms including Redacted Information Security and Malware Security. Remy is Head Instructor of AusISA and Director at Redacted Information Security, Miranda is Manager and AI Security Consultant at Malware Security, James is the Principal Cyber Security Consultant and Director of Malware Security, and Simon is Director and Principal Consultant at Redacted Information Security.",
-      "bio": "Miranda\n\nMiranda is Manager and AI Security Consultant at Malware Security, leading delivery of offensive security engagements for government, defence and critical infrastructure. Beginning her career in the ACSC's Cyber Hygiene Improvement Programs (CHIPs) team, she is now one of few Australian practitioners actively red-teaming AI systems and tracking emerging adversary tradecraft. She enjoys breaking things to understand how they work, and using that insight to help organisations assess risk, map attack surfaces, and secure frontier technologies. In her spare time, she also builds bespoke AI solutions for clients where the challenge is too interesting to ignore. She is an ANU School of Computer Science Alumni.\n\nRemy\n\nHead Instructor of AusISA and Director at Redacted Information Security. Remy has over a decade of experience across Federal Government, law enforcement and the military. He is an IRAP Assessor, GIAC Certified Security Leader, ISO 27001 Lead Auditor, and other . He has a background in ADF Cyber where he commanded the first Army Cyber Protection Team. Remy has experience working within many commercial organisations, government departments and military units. Redacted makes Red Team tools, develops capability for Defence projects, and produces an AI platform for government security assessments.",
+      "abstract": "A panel on the cyber security industry in Canberra, featuring practitioners from local firms Redacted Information Security and Malware Security — what the local industry actually looks like, and how to break into it.",
+      "bio": "",
       "slot": "30 min",
       "time": "15:15",
-      "linkedin": "https://www.linkedin.com/in/remy-coll-809946203/",
-      "website": "https://redacted.au",
+      "linkedin": "",
+      "website": "",
       "slides": "",
-      "recording": ""
+      "recording": "",
+      "panelists": [
+        {
+          "name": "Remy Coll",
+          "role": "Head Instructor, AusISA · Director, Redacted Information Security",
+          "photo": "/images/speakers/Cyber Industry Panel/remy-coll.jpg",
+          "bio": "Remy has over a decade of experience across Federal Government, law enforcement and the military. He is an IRAP Assessor, GIAC Certified Security Leader and ISO 27001 Lead Auditor, with a background in ADF Cyber where he commanded the first Army Cyber Protection Team. Redacted makes Red Team tools, develops capability for Defence projects, and produces an AI platform for government security assessments.",
+          "linkedin": "https://www.linkedin.com/in/remy-coll-809946203/",
+          "website": "https://redacted.au"
+        },
+        {
+          "name": "Miranda Riddell",
+          "role": "Manager & AI Security Consultant, Malware Security",
+          "photo": "/images/speakers/Cyber Industry Panel/miranda-riddel.jpg",
+          "bio": "Miranda leads delivery of offensive security engagements for government, defence and critical infrastructure. Beginning her career in the ACSC's Cyber Hygiene Improvement Programs (CHIPs) team, she is now one of few Australian practitioners actively red-teaming AI systems and tracking emerging adversary tradecraft. She enjoys breaking things to understand how they work, and using that insight to help organisations assess risk, map attack surfaces, and secure frontier technologies. In her spare time, she also builds bespoke AI solutions for clients where the challenge is too interesting to ignore. She is an ANU School of Computer Science Alumni."
+        },
+        {
+          "name": "James Thomson",
+          "role": "Principal Cyber Security Consultant & Director, Malware Security",
+          "photo": "/images/speakers/Cyber Industry Panel/james-thompson.jpeg",
+          "bio": ""
+        },
+        {
+          "name": "Simon Smalley",
+          "role": "Director & Principal Consultant, Redacted Information Security",
+          "photo": "/images/speakers/Cyber Industry Panel/simon-smalley.jpg",
+          "bio": ""
+        }
+      ]
     },
     {
       "name": "Antony Hosking & Peter Woodhead",

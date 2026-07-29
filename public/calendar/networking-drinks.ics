@@ -7,8 +7,8 @@ DTSTAMP:20260802T180000Z
 DTSTART;TZID=Australia/Canberra:20260802T180000
 DTEND;TZID=Australia/Canberra:20260802T220000
 SUMMARY:Networking & Drinks Night — Bush Week Tech Fest
-DESCRIPTION:Cap off the festival with an evening of networking and drinks in the city with speakers\, sponsors and fellow students. https://anucssa.github.io/techfest-website/events/networking-drinks/
-LOCATION:Canberra City Centre\, ACT 2601 — exact venues announced on each event page
+DESCRIPTION:Cap off the festival with an evening of networking and drinks in the city with speakers\, sponsors and fellow students. We've booked out Bar Lola and Dear Prudence at Verity Lane Market for up to 100 guests\, and every $7.50 dirt-cheap ticket gets you two drink tokens and food. 18+ — bring photo ID. https://anucssa.github.io/techfest-website/events/networking-drinks/
+LOCATION:Verity Lane Market\, 50 Northbourne Ave\, Canberra ACT 2601 (enter via Verity Lane)
 URL:https://anucssa.github.io/techfest-website/events/networking-drinks/
 END:VEVENT
 END:VCALENDAR
