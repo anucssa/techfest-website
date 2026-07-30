@@ -46,9 +46,9 @@
   ],
 
   "remote": {
-    "_note": "Remote participation settings. When CommBank issues the panel video-call link, paste it into commbankCallUrl — the join buttons on /remote/ and the Tech Talks page switch from 'coming soon' to live automatically. No code changes needed.",
-    "commbankCallUrl": "https://teams.microsoft.com/meet/495247135761717?p=KD33w9nuEW3we5ahMD",
-    "commbankCallPlatform": "CommBank video call (ANU Microsoft Teams)",
+    "_note": "Remote participation settings. When CommBank issues the panel video-call link, paste it into commbankCallUrl — the join buttons on /remote/ and the Tech Talks page switch from 'coming soon' to live automatically. No code changes needed. LINK BUP: https://teams.microsoft.com/meet/495247135761717?p=KD33w9nuEW3we5ahMD",
+    "commbankCallUrl": "https://forms.cloud.microsoft/r/yXxwf2n3UA",
+    "commbankCallPlatform": "Register for CommBank video call (ANU Microsoft Teams)",
     "commbankCallTime": "Friday 31 July · 1:45pm – 2:35pm AEST"
   },
 
