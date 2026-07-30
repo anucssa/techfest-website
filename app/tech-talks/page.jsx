@@ -34,7 +34,7 @@ function VideoCallButton() {
   if (url) {
     return (
       <a href={url} target="_blank" rel="noopener noreferrer" className="btn-trail text-sm">
-        <Icon name="external" className="h-4 w-4" /> Join the video call
+        <Icon name="external" className="h-4 w-4" /> Register to join the video call
       </a>
     );
   }

@@ -58,7 +58,7 @@ export default function RemotePage() {
           <div className="mt-5 flex flex-wrap items-center gap-3">
             {call.commbankCallUrl ? (
               <a href={call.commbankCallUrl} target="_blank" rel="noopener noreferrer" className="btn-trail">
-                <Icon name="external" className="h-4 w-4" /> Join the video call
+                <Icon name="external" className="h-4 w-4" /> Register to join the video call
               </a>
             ) : (
               <span aria-disabled="true" className="btn-ghost cursor-default !font-semibold opacity-60">
