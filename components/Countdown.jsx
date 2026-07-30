@@ -1,7 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-export default function Countdown({ target, label = 'until the festival' }) {
+export default function Countdown({
+  target,
+  label = 'until the festival',
+  doneLabel = 'The festival is on now — see you there!',
+}) {
   const [t, setT] = useState(null);
   useEffect(() => {
     const tick = () => {
@@ -19,7 +23,7 @@ export default function Countdown({ target, label = 'until the festival' }) {
   }, [target]);
 
   if (!t) return <div className="h-16" aria-hidden="true" />;
-  if (t.done) return <p className="text-lg font-extrabold">The festival is on now — see you there!</p>;
+  if (t.done) return <p className="text-lg font-extrabold">{doneLabel}</p>;
 
   const cell = (v, u) => (
     <div className="flex flex-col items-center rounded-xl bg-white/15 px-3 py-2 backdrop-blur-sm">

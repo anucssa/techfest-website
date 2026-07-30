@@ -94,7 +94,8 @@ export default function RemotePage() {
             </a>
           </div>
           <div className="mt-5">
-            <Countdown target="2026-07-31T17:00:00+10:00" label="until flags drop" />
+            <Countdown target="2026-07-31T17:00:00+10:00" label="until flags drop"
+              doneLabel="Flags are live — play now at bushbash.cssa.club!" />
           </div>
         </section>
       </div>

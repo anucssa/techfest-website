@@ -16,6 +16,10 @@
   "ctf": {
     "name": "BushBash CTF",
     "playUrl": "https://bushbash.cssa.club/",
+    "scoreboardUrl": "https://bushbash.cssa.club/scoreboard",
+    "apiUrl": "https://bushbash.cssa.club/api",
+    "divisionId": 1,
+    "_apiNote": "apiUrl powers the live top-10 scoreboard on /ctf/. It only works once the noCTF server's ALLOWED_ORIGINS env var includes this site's hostname (e.g. techfest.cssa.club) — until then the widget falls back to a link. Set apiUrl to \"\" to disable the widget entirely.",
     "ctftimeUrl": "https://ctftime.org/ctf/1639",
     "hours": 48,
     "targetParticipants": 250

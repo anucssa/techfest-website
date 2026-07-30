@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import Countdown from '@/components/Countdown';
+import LiveScoreboard from '@/components/LiveScoreboard';
 import { site, venues, asset, absUrl } from '@/lib/data';
 
 const description =
@@ -73,7 +74,24 @@ export default function CtfPage() {
               CTFtime listing <Icon name="external" className="h-4 w-4" />
             </a>
           </div>
-          <Countdown target="2026-07-31T17:00:00+10:00" label="until flags drop" />
+          <Countdown target="2026-07-31T17:00:00+10:00" label="until flags drop"
+            doneLabel="Flags are live — the CTF is on right now!" />
+        </div>
+      </section>
+
+      {/* ---------- LIVE SCOREBOARD ---------- */}
+      <section id="scoreboard" className="container-site scroll-mt-20 pt-14 sm:pt-20">
+        <h2 className="h-section">Live scoreboard</h2>
+        <div className="mt-6">
+          <LiveScoreboard limit={10} />
+        </div>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer" className="btn-trail text-lg !px-8 !py-4">
+            <Icon name="flag" className="h-5 w-5" /> Play the CTF
+          </a>
+          <a href={site.ctf.scoreboardUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-lg !px-8 !py-4">
+            <Icon name="trophy" className="h-5 w-5" /> Open full scoreboard
+          </a>
         </div>
       </section>
 
@@ -156,6 +174,9 @@ export default function CtfPage() {
             <div className="mt-4 flex flex-col gap-2">
               <a className="btn-trail text-sm" href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer">
                 bushbash.cssa.club <Icon name="external" className="h-4 w-4" />
+              </a>
+              <a className="btn-ghost text-sm" href={site.ctf.scoreboardUrl} target="_blank" rel="noopener noreferrer">
+                <Icon name="trophy" className="h-4 w-4" /> Live scoreboard
               </a>
               <a className="btn-ghost text-sm" href={site.ctf.ctftimeUrl} target="_blank" rel="noopener noreferrer">
                 ctftime.org/ctf/1639 <Icon name="external" className="h-4 w-4" />

@@ -137,6 +137,9 @@ export default function Home() {
                 <a href={site.ctf.playUrl} target="_blank" rel="noopener noreferrer" className="btn-trail text-lg">
                   <Icon name="flag" /> Play the CTF — July 31st
                 </a>
+                <Link href="/ctf/#scoreboard" className="btn border-2 border-white/30 font-bold text-white hover:border-white/70">
+                  <Icon name="trophy" className="h-4 w-4" /> Live scoreboard
+                </Link>
                 <a href={site.ctf.ctftimeUrl} target="_blank" rel="noopener noreferrer" className="btn border-2 border-white/30 font-bold text-white hover:border-white/70">
                   CTFtime listing <Icon name="external" className="h-4 w-4" />
                 </a>
