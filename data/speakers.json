@@ -177,7 +177,7 @@
       ]
     },
     {
-      "name": "Xiaoyu Sun, Dianshu Liao, Kaiwen & Alwen Tiu",
+      "name": "Xiaoyu Sun, Dianshu Liao, Kaiwen Yang & Alwen Tiu",
       "panel": true,
       "photo": "/images/speakers/Academia Panel/anu-academia-panel.jpg",
       "company": "Australian National University (ANU)",
@@ -208,10 +208,10 @@
           "bio": ""
         },
         {
-          "name": "Kaiwen",
+          "name": "Kaiwen Yang",
           "role": "ANU School of Computing",
-          "photo": "",
-          "bio": ""
+          "photo": "/images/speakers/Academia Panel/kaiwen-yang.png",
+          "bio": "Kaiwen Yang is a first-year PhD student in Computer Science at ANU. His research focuses on software engineering and software supply chain security."
         },
         {
           "name": "Alwen Tiu",
